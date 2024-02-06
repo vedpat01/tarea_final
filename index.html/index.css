@@ -1,0 +1,220 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: bold;
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+}
+
+.banner {
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: #ffffff;
+}
+
+.banner img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.menu {
+    border-radius: 0;
+    padding: 4px;
+    background-color: #ffffff;
+    width: fit-content;
+    margin-top: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+.inner {
+    grid-template-columns: auto auto auto auto;
+    background-color: #ffffff;
+    display: grid;
+    text-align: center;
+    width: 620px;
+    border-radius: 25px;
+}
+ 
+.inner a {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    margin-right: 0;
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.inner a:last-child {
+    margin-right: 0px;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: rgb(202, 202, 202);
+}
+
+.intro {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.intro h1 {
+    font-family: sans-serif;
+}
+
+.intro img {
+    width: 40%;
+}
+ 
+.content {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.title {
+    line-height: 25px;
+}
+
+footer {
+    background-color: rgb(223, 223, 223);
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+h3 {
+    font-size: 18px;
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.menu {
+    border-radius: 0;
+    padding: 4px;
+    background-color: #ffffff;
+    width: fit-content;
+    margin-top: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex; 
+    justify-content: center;
+}
+
+.inner {
+    grid-template-columns: auto auto auto auto;
+    background-color: #ffffff;
+    display: grid;
+    text-align: center;
+    width: 620px;
+    border-radius: 25px;
+}
+
+.inner a {
+    padding: 10px 20px; 
+    background-color: #ffffff;
+    border-radius: 1px;
+    margin-right: 0;
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: font-size 0.3s; 
+}
+
+.inner a:last-child {
+    margin-right: 0px;
+}
+
+.inner a:hover {
+    cursor: pointer;
+    font-size: 20px; 
+}
+
+.intro {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.intro h1 {
+    font-family: Montserrat, sans-serif; 
+    font-weight: bold; 
+    font-size: 24px; 
+    transition: font-size 0.3s; 
+    border-bottom: 1px solid black; 
+    padding-bottom: 5px; 
+}
+
+
+.intro img {
+    width: 40%;
+}
+
+.content {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.title {
+    line-height: 25px;
+}
+
+.intro h1:hover {
+    cursor: pointer;
+    font-size: 28px; 
+}
+
+
+#back-to-top {
+    position: fixed; /* Se mantiene fijo en la ventana */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la derecha */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-family: Montserrat, sans-serif; /* Fuente */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor al pasar sobre él */
+    opacity: 0; /* Inicialmente no visible */
+    transition: opacity 0.3s; /* Efecto de transición */
+}
+
+#back-to-top:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Cambio de color al pasar el cursor */
+}
+
+#back-to-top.show {
+    opacity: 1; /* Hacer visible cuando se desplaza hacia abajo */
+}
+
+
